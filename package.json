@@ -1,14 +1,14 @@
 {
   "name": "@jongleberry/load-script",
   "version": "1.0.0",
-  "description": "",
+  "description": "Script loader with promise & requestIdleCallback support",
   "scripts": {
     "build": "babel -d dist -s inline src/",
     "eslint": "eslint --fix --cache .",
     "test": "jest --coverage"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)",
+  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
@@ -32,5 +32,15 @@
       "resources": "usable",
       "runScripts": "dangerously"
     }
-  }
+  },
+  "keywords": [
+    "async",
+    "asynchronous",
+    "script",
+    "javascript",
+    "loader",
+    "request",
+    "idle",
+    "callback"
+  ]
 }
