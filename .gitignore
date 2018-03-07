@@ -1,0 +1,18 @@
+
+
+.DS_Store*
+*.log
+*.map
+*.gz
+
+node_modules
+coverage
+build
+
+.cache
+.env
+.nyc_output
+.eslintcache
+
+# sucks
+package-lock.json

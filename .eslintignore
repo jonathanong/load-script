@@ -1,0 +1,11 @@
+
+build
+coverage
+coverage_*
+dist
+tmp
+vendor
+public
+static
+assets
+.nyc_output

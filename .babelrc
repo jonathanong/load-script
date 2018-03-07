@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "stage-2",
+    ["env", {
+      "targets": {
+        "browsers": ["last 2 versions", "safari >= 7", "ie >= 11"]
+      },
+      "modules": "commonjs"
+    }]
+  ],
+  "plugins": [
+    "transform-runtime"
+  ]
+}
