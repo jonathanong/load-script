@@ -1,7 +1,9 @@
 
 module.exports = (src, options = {}) => new Promise((resolve, reject) => {
-  const { timeout } = options
+  let { timeout } = options
   if (typeof timeout === 'number') {
+    timeout = Math.max(timeout, 1)
+
     if (typeof requestIdleCallback === 'function') {
       requestIdleCallback(loadScript, {
         timeout
