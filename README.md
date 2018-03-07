@@ -2,6 +2,7 @@
 # @jongleberry/load-script
 
 [![Build Status](https://travis-ci.org/jonathanong/load-script.svg?branch=master)](https://travis-ci.org/jonathanong/load-script)
+[![codecov](https://codecov.io/gh/jonathanong/load-script/branch/master/graph/badge.svg)](https://codecov.io/gh/jonathanong/load-script)
 
 ## API
 
