@@ -15,6 +15,18 @@ Installation:
 npm install --save-dev @jongleberry/load-script
 ```
 
+Example:
+
+```js
+import loadScript from '@jongleberry/load-script'
+
+loadScript('https://www.googletagmanager.com/ns.html?id=GTM-XXXX', {
+  timeout: 1000
+}).catch((err) => {
+  console.error(err.stack)
+})
+```
+
 ## API
 
 ### const script = await loadScript(src [, options])
