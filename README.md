@@ -4,6 +4,17 @@
 [![Build Status](https://travis-ci.org/jonathanong/load-script.svg?branch=master)](https://travis-ci.org/jonathanong/load-script)
 [![codecov](https://codecov.io/gh/jonathanong/load-script/branch/master/graph/badge.svg)](https://codecov.io/gh/jonathanong/load-script)
 
+Script loader with:
+
+- `Promise` support
+- `requestIdleCallback` support
+
+Installation:
+
+```bash
+npm install --save-dev @jongleberry/load-script
+```
+
 ## API
 
 ### const script = await loadScript(src [, options])
