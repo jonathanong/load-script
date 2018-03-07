@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "build": "babel -d dist -s inline src/",
-    "eslint": "eslint --fix --cache ."
+    "eslint": "eslint --fix --cache .",
+    "test": "jest --coverage"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +14,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-2": "^6.24.1",
+    "codecov": "^3.0.0",
     "eslint": "^4.16.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.8.0",
@@ -24,5 +26,11 @@
   "files": [
     "dist"
   ],
-  "main": "dist/index.js"
+  "main": "dist/index.js",
+  "jest": {
+    "testEnvironmentOptions": {
+      "resources": "usable",
+      "runScripts": "dangerously"
+    }
+  }
 }

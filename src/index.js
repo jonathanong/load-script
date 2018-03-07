@@ -19,8 +19,8 @@ module.exports = (src, options = {}) => new Promise((resolve, reject) => {
 
   function loadScript () {
     const script = document.createElement('script')
-    script.onload = () => resolve(script)
-    script.onerror = () => reject(new Error(`Failed to load script: "${src}"`))
+    script.addEventListener('load', () => resolve(script))
+    script.addEventListener('error', () => reject(new Error(`Failed to load script: "${src}"`)))
     if (options.type) script.type = options.type
     if (options.charset) script.charset = options.charset
     if (options.id) script.id = options.id
