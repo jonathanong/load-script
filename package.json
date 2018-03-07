@@ -5,6 +5,7 @@
   "scripts": {
     "build": "babel -d dist -s inline src/",
     "eslint": "eslint --fix --cache .",
+    "prepublish": "npm run build",
     "test": "jest --coverage"
   },
   "author": "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)",
@@ -14,6 +15,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-2": "^6.24.1",
+    "babel-runtime": "^6.26.0",
     "codecov": "^3.0.0",
     "eslint": "^4.16.0",
     "eslint-config-standard": "^11.0.0",
@@ -31,7 +33,11 @@
     "testEnvironmentOptions": {
       "resources": "usable",
       "runScripts": "dangerously"
-    }
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ]
   },
   "keywords": [
     "async",
